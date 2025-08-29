@@ -10,7 +10,6 @@ By bridging data-driven reconstruction with rigorous wave-optical modeling, this
 
 This project integrates deep convolutional neural networks with Fourier-optical simulations to reconstruct and visualize holographic images. First, paired hologram–object datasets are preprocessed and fed into a lightweight CNN that learns to map hologram intensities back to underlying object structures. The trained model is evaluated using local adaptive thresholding, producing binary masks that recover hidden features. In parallel, analytic simulations of Fresnel diffraction illustrate field propagation, phase encoding at the hologram plane, and dynamic moving-object hologram animations. An animated plot of CNN training loss complements the optical animations, offering insight into model convergence. By bridging deep learning and classical Fourier optics, this repository provides a comprehensive platform for advancing computational imaging and holographic reconstruction research.
 
----
 
 ## Project Overview
 
@@ -39,8 +38,6 @@ This repository contains five core components:
    - Generates and animates the CNN training loss curve over epochs.  
    - Provides a dynamic view of model convergence.
 
----
-
 ## Requirements
 
 - Python 3.7 or higher  
@@ -53,9 +50,8 @@ This repository contains five core components:
 - scikit‐image  
 - tqdm  
 
-Install dependencies:
+## Install dependencies:
 
-```bash
 pip install numpy scipy matplotlib pillow scikit-image tqdm tensorflow torch
 
 Concepts Illustrated
@@ -73,7 +69,7 @@ This project demonstrates:
 • 	A foundation for further research in computational imaging and holographic reconstruction
 
 Author
-Developed by Fuseini, aspiring graduate researcher in computational optics and deep learning.
+Developed by Alhassan Kpahambang Fuseini.
 
 License
 This project is licensed under the MIT License. Feel free to use, modify, and distribute with attribution.
