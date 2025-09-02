@@ -1,13 +1,17 @@
 # Deep-Learning-for-Digital-Hologram-Reconstruction-and-Simulation
+#  Introduction
+The intersection of computational imaging and deep learning has opened transformative pathways for reconstructing complex physical phenomena from raw data. This project presents a comprehensive pipeline for holographic image reconstruction using convolutional neural networks (CNNs), Fourier optics, and physics-based simulation. By integrating classical wave propagation models with modern machine learning architectures, the system offers a robust framework for learning and visualizing object-field relationships in holography.
+At its core, the project addresses the challenge of reconstructing object images from holographic labels—grayscale intensity patterns that encode phase and amplitude information. A custom CNN architecture is trained to learn this mapping, leveraging convolutional and transposed convolutional layers to extract and reconstruct spatial features. The training process is visualized through animated loss curves, while model outputs are evaluated using local thresholding and comparative image plots.
+Beyond the neural network, the project incorporates a physics-based simulation of Fresnel diffraction using Fourier transforms. This module generates synthetic holograms from moving objects, enabling dynamic visualization of wavefront propagation and interference patterns. The simulation is animated to illustrate how object motion affects hologram formation, providing an intuitive bridge between physical optics and data-driven learning.
+# Key contributions of this work include:
+• 	A custom CNN for hologram-to-object reconstruction trained on real grayscale image pairs.
+• 	Integration of Fresnel diffraction simulation using FFT-based propagation kernels.
+• 	Visualization of training dynamics through animated loss curves and output comparisons.
+• 	Generation of synthetic holograms from moving objects to validate physical modeling.
+• 	Modular project structure supporting reproducibility, scalability, and future experimentation.
+This hybrid approach—combining physics-based modeling with deep learning—demonstrates the power of interdisciplinary design in solving inverse problems. It lays the groundwork for future research in computational holography, optical neural networks, and physics-informed machine learning, offering a compelling platform for both academic inquiry and practical deployment.
+
 # Abstract
-This project presents an end-to-end computational imaging pipeline that unites deep learning with classical Fourier-optical simulation to reconstruct and analyze digital holograms. First, paired hologram–object datasets are organized, preprocessed, and ingested into a lightweight convolutional neural network (CNN) that learns to invert hologram intensities back to the underlying object structures. The network’s training dynamics are visualized through animated loss curves, and final predictions are refined with adaptive local thresholding to recover fine object details.
-Concurrently, the repository implements analytic Fresnel-diffraction simulations: a synthetic circular aperture excites a complex field that propagates according to the transfer-function approach, yielding amplitude and phase distributions at the hologram plane. A moving-object module animates point-source motion across the field and generates corresponding dynamic holograms, saved as high-resolution GIFs.
-By bridging data-driven reconstruction with rigorous wave-optical modeling, this work offers a robust platform for advancing holographic reconstruction, optical encryption, and computational microscopy. The CNN provides a fast, learned inversion that complements physically grounded propagation methods, while animations of both the optical fields and the training process deepen intuitive understanding. With modular code, clear output structuring, and extensive visualization, this toolkit equips researchers and students to explore hologram inversion, prototype novel imaging algorithms, and integrate machine learning with optical theory in graduate-level research.
-
-# Deep Learning-Based Hologram Reconstruction and Fourier Optics Simulation
-
-## Abstract
-
 This project integrates deep convolutional neural networks with Fourier-optical simulations to reconstruct and visualize holographic images. First, paired hologram–object datasets are preprocessed and fed into a lightweight CNN that learns to map hologram intensities back to underlying object structures. The trained model is evaluated using local adaptive thresholding, producing binary masks that recover hidden features. In parallel, analytic simulations of Fresnel diffraction illustrate field propagation, phase encoding at the hologram plane, and dynamic moving-object hologram animations. An animated plot of CNN training loss complements the optical animations, offering insight into model convergence. By bridging deep learning and classical Fourier optics, this repository provides a comprehensive platform for advancing computational imaging and holographic reconstruction research.
 
 
